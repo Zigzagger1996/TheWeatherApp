@@ -24,8 +24,8 @@ public class Parser {
             String dayFree = name.select("p[class=date dateFree]").text();
             String dayWorking = name.select("p[class=date]").text();
             String month = name.select("p[class=month]").text();
-            String minTemperature = wthPerWeek.select("div[class = min]").text();
-            String maxTemperature = wthPerWeek.select("div[class = max]").text();
+            String minTemperature = name.select("div[class = min]").text();
+            String maxTemperature = name.select("div[class = max]").text();
             System.out.println("Дата: " + dayWorking + dayFree + " месяц: " + month + " Температура: " + minTemperature + maxTemperature);
         }
         System.out.println("");
