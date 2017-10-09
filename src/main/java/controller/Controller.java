@@ -15,8 +15,7 @@ public class Controller {
     }
 
     public void processUser() throws IOException{
-        TextConstants textConstants = new TextConstants();
-        model.getTemperatureInfo(textConstants.URL_FOR_PARSE, textConstants.DIV_WTH_STRING, textConstants.DAY_FREE_STRING,textConstants.OTHER_DAY_IN_WEEK_STRING, textConstants.WTH_PER_WEEK_STRING, textConstants.DAY_FREE_STRING, textConstants.DAY_WORK_STRING, textConstants.MONTH_STRING, textConstants.MIN_TEMPERATURE_STRING, textConstants.MAX_TEMPERATURE_STRING);
+        model.getTemperatureInfo(TextConstants.URL_FOR_PARSE, TextConstants.DIV_WTH_STRING, TextConstants.DAY_FREE_STRING,TextConstants.OTHER_DAY_IN_WEEK_STRING, TextConstants.WTH_PER_WEEK_STRING, TextConstants.DAY_FREE_STRING, TextConstants.DAY_WORK_STRING, TextConstants.MONTH_STRING, TextConstants.MIN_TEMPERATURE_STRING, TextConstants.MAX_TEMPERATURE_STRING);
     }
 
 }
